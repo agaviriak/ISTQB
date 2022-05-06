@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "d9b002ab-1296-4b03-9d32-9d9569194de2",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Agaviria",
+			"item": [
+				{
+					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"#Pagina y status 200\", function () {\r",
+									"    var myjson= pm.response.json();\r",
+									"    pm.expect(myjson.page).to.eqls(2)\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"michael\");\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Host}}/api/users?page=2",
+							"host": [
+								"{{Host}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"description": "hola"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var kilo=pm.response.json();\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    user=kilo.data.find(i => i.id==11)\r",
+									"    console.log(user)\r",
+									"    pm.expect(user.email).contains(\"george.edwards@reqres.in\")\r",
+									"    \r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Host}}/api/users?page=2",
+							"host": [
+								"{{Host}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"description": "hola"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar Usuario",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var kilo=pm.response.json();\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    user=kilo.data.find(i => i.id=11)\r",
+									"   \r",
+									"    pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"leader\"\r\n}"
+						},
+						"url": {
+							"raw": "{{Host}}/api/users",
+							"host": [
+								"{{Host}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

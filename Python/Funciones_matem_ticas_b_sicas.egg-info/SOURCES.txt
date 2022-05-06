@@ -1,0 +1,7 @@
+setup.py
+Funciones_matem_ticas_b_sicas.egg-info/PKG-INFO
+Funciones_matem_ticas_b_sicas.egg-info/SOURCES.txt
+Funciones_matem_ticas_b_sicas.egg-info/dependency_links.txt
+Funciones_matem_ticas_b_sicas.egg-info/top_level.txt
+paquetes/__init__.py
+paquetes/matematicas.py

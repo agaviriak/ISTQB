@@ -1,0 +1,10 @@
+#l1 {
+background-color: rgb(0, 217, 255);
+font-size: larger;
+padding: 10px;
+}
+
+#img1{
+    max-width:100%;
+    height:auto;
+}
