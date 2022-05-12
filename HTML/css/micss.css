@@ -1,0 +1,19 @@
+body{
+	background-color:rgba(162, 226, 246, 0.952);
+}
+
+h1{
+	color:rgb(14, 11, 1);
+	border-top:2px solid #FFF;
+	border-bottom:2px solid #FFF;
+	padding-bottom:50px;
+	text-align:center;
+}
+
+p{
+	color:rgba(10, 8, 0, 0.874);
+	font-size:2em;
+}
+
+p span{font-size:2em;
+}
