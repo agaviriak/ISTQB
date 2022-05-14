@@ -1,9 +1,7 @@
-body{
-	background-color:rgba(162, 226, 246, 0.952);
-}
+body{background-color:rgba(162, 226, 246, 0.952);}
 
 h1{
-	color:rgb(14, 11, 1);
+	color:rgba(10, 136, 190, 0.932);
 	border-top:2px solid #FFF;
 	border-bottom:2px solid #FFF;
 	padding-bottom:50px;
@@ -12,8 +10,12 @@ h1{
 
 p{
 	color:rgba(10, 8, 0, 0.874);
-	font-size:2em;
+	font-size:1.5em;
 }
 
-p span{font-size:2em;
+a{
+	color:rgba(16, 5, 213, 0.874);
+	font-size:1.5em;
 }
+
+p span{font-size:2em;}

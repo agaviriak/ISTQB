@@ -2,14 +2,31 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/micss.css">
+        <title>Página de prueba</title>
+        <script>
+            /*Interacción del usuario para ingreso de Nros.*/
+            var a=prompt("Digite un número")
+            b=prompt("Digite otro número"),
+            total=Number(a)+Number(b);
+            alert("La suma de "+a +" + " +b +" es igual a "+total);
+        </script>
     </head>
     <body>
-        
-    <script src="" async defer></script>
+        <!--Menú de accesos-->
+        <header><nav>
+            <a href="">Opcion1</a>
+            <a href="">Opcion2</a>
+            <a href="">Opcion3</a>
+            <a href="">Opcion4</a>
+        </nav></header>
+        <h1>Este es el Título</h1>
+        <p>Este es un parrafo unicamente visual para ver el uso de
+        la etiqueta hr</p>
+        <p>La suma de los numeros digitados es
+        <script>document.write(total)</script></p>      
+        <hr/>
+        <p>Este es el segundo parrafo, separado del primero por la 
+        etiqueta hr, que puede representarse mediante una línea horizontal.</p>
     </body>
 </html>
