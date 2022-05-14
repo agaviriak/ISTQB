@@ -22,6 +22,6 @@ connection.query("select * from notas", function(error,rows){
     console.log(rows[6])
 
 });
-var insertar= "insert into notas (Nombre,Materia,Nota) values ('Lucas','Matematicas',4)";
-connection.query(insertar);
+/*var insertar= "insert into notas (Nombre,Materia,Nota) values ('Lucas','Matematicas',4)";
+connection.query(insertar);*/
 connection.end();
