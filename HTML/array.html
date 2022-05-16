@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AGAVIRIA JS</title>
+    <link href="css/micss.css" rel="stylesheet">
+    <script>
+        var articulos=["zapatos","camiseta","pantalon","medias"];
+    </script>
+</head>
+<body>
+    <h1>Hola alumnos<br/>Bienvenidos a la clase de JavaScript sobre <span>Arrays</span></h1>
+    <script>
+        //document.write(articulos[0]);
+        document.write("<h3>siguiente listado está almacenado en el Arreglo Artículos</h3>"); 
+        articulos.forEach(i => {
+            document.write(i+"<br/>")
+        });
+        largo_art=articulos.length-1;
+        var a=prompt("Que posición del array quieres imprimir: desde 0 hasta "+ largo_art);
+        document.write("<br/>El articulo que elegiste para visualizar es: ");
+        document.write("<strong>"+articulos[a]+"</strong>");
+        alert("Elegiste el artículo "+articulos[a]);
+    </script>
+  </body>
+</html>
