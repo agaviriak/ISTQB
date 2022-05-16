@@ -1,7 +1,11 @@
-body{background-color:rgba(162, 226, 246, 0.952);}
+body{
+	background-color:rgba(34, 145, 178,0.719);
+	color:rgba(16, 16, 16, 0.962);
+	font-size:1em;
+}
 
 h1{
-	color:rgba(10, 136, 190, 0.932);
+	color:rgba(30, 82, 104, 0.955);
 	border-top:2px solid #FFF;
 	border-bottom:2px solid #FFF;
 	padding-bottom:50px;
@@ -18,4 +22,4 @@ a{
 	font-size:1.5em;
 }
 
-p span{font-size:2em;}
+p span{font-size:1.5em;}
